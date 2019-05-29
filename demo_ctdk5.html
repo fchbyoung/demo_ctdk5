@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<!--    đề bài không rõ nên e tự nghĩ ra đề khác :))-->
+<!--    từ 0.0-4.0 : kém-->
+<!--    từ 4.0-5.4 : trung bình yếu-->
+<!--    từ 5.5-6.9 : trung bình-->
+<!--    từ 7.0-8.4 : khá-->
+<!--    từ 8.5-10.0: giỏi-->
+<!--    cách xét : (điểm thành phần)*0.3 + điểm thi cuối kỳ * 0.7-->
+    <script>
+        let a = parseFloat(prompt("Nhập điểm thành phần: "));
+        let b = parseFloat(prompt("Nhập điểm kiểm tra giữa kỳ: "));
+
+        let tongdiem = a*0.3 + b*0.7;
+
+        if(tongdiem >= 0 && tongdiem <= 4){
+            alert("học lực kém");
+        }
+        else if(tongdiem => 4 && tongdiem <= 5.4){
+            alert("học lực trung bình yếu");
+        }
+        else if(tongdiem => 5.5 && tongdiem <= 6.9){
+            alert("học lực trung bình");
+        }
+        else if(tongdiem >= 7 && tongdiem <= 8.4){
+            alert("học lực khá");
+        }
+        else if(tongdiem >=8.5 && tongdiem <=10){
+            alert("học lực giỏi");
+        }
+        else{
+            alert("số điểm này nằm ngoài thang điểm đang xét");
+        }
+    </script>
+</body>
+</html>
